@@ -42,30 +42,3 @@ variable "platform" {
     type        = number
     description = "The number of the machine count"
 }
-
-
-
-
-variable "disk_count" {
-    type        = number
-    description = "The number of the disk count"
-}
-
-variable "image_id" {
-    type        = string
-    description = "The id of the machine image"
-}
-
-variable "public_ssh_key_path" {
-    type        = string
-    description = "Public ssh key path"    
-}
-
-variable "az" {
-    type = list(string)
-    description = "List yandex network zones"
-    default = [
-        "ru-central1-a",
-        "ru-central1-b"
-    ]
-}
