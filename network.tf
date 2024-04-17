@@ -6,7 +6,7 @@ resource "yandex_vpc_subnet" "this" {
   name           = var.zone
   zone           = var.zone
   network_id     = yandex_vpc_network.this.id
-  v4_cidr_blocks = var.cidr_blocks[0]
+  v4_cidr_blocks = var.cidr_blocks
 }
 
 resource "yandex_vpc_address" "this" {
