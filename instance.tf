@@ -20,7 +20,7 @@ resource "yandex_compute_instance" "this" {
   network_interface {
     subnet_id      = yandex_vpc_subnet.this.id
     nat            = true
-    nat_ip_address = yandex_vpc_address.this.external_ipv4_address.0.address
+#    nat_ip_address = yandex_vpc_address.this.external_ipv4_address.0.address
   }
 
   metadata = {

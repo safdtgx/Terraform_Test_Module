@@ -9,10 +9,10 @@ resource "yandex_vpc_subnet" "this" {
   v4_cidr_blocks = var.cidr_blocks
 }
 
-resource "yandex_vpc_address" "this" {
-  name = "external_ipv4"
-
-  external_ipv4_address {
-    zone_id = var.zone
-  }
-}
+#resource "yandex_vpc_address" "this" {
+#  name = "external_ipv4"
+#
+#  external_ipv4_address {
+#    zone_id = var.zone
+#  }
+#}
