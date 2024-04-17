@@ -39,6 +39,6 @@ variable "vm_memory" {
 }
 
 variable "platform" {
-    type        = number
+    type        = string
     description = "The number of the machine count"
 }
