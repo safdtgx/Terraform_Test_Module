@@ -5,7 +5,7 @@ resource "yandex_compute_instance" "this" {
 
   resources {
     cores  = var.vm_cores_count
-    memory = var.vm_memory_count
+    memory = var.vm_memory
   }
 
   boot_disk {
