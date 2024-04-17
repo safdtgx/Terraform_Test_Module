@@ -1,5 +1,5 @@
 resource "yandex_vpc_network" "this" {
-  name = "${var.network-name}-${var.stand}"
+  name = "${var.network_name}-${var.stand}"
 }
 
 resource "yandex_vpc_subnet" "this" {
