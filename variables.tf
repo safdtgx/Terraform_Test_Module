@@ -16,7 +16,7 @@ variable "zone" {
 }
 
 variable "cidr_blocks" {
-  type        = list(list(string))
+  type        = list(string)
   description = "List of lists of IPv4 cidr blocks for subnets"
 }
 
