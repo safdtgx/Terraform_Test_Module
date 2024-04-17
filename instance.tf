@@ -1,6 +1,8 @@
 resource "yandex_compute_instance" "this" {
+  count = var.vm_count
+
   name        = "instance-${count.index}"
-  platform_id = "standard-v1"
+  platform_id = var.platform
   zone        = var.zone
 
   resources {
